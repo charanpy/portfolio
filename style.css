@@ -11,6 +11,7 @@ body{
     margin: 3.5rem 3.5rem 0 3.5rem;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    position: relative;
 }
 
 header{
@@ -49,7 +50,7 @@ header{
   
 }
 
-nav{
+header nav{
     width: 100%;
     height: 20vh;
     display: flex;
@@ -57,7 +58,7 @@ nav{
     justify-content: space-between;
     z-index: 100;
 }
-nav ul{
+header nav ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,14 +75,14 @@ a{
 .name{
     margin-left: 5rem;
 }
-nav .name .dev{
+header nav .name .dev{
     font-family: "Montserrat Black",sans-serif;
     font-size: 2rem;
     color:white;
     color: rgba(254,254,254,.9);
     
 }
-nav ul li{
+header nav ul li{
     font-family: "Roboto Condensed",monospace;
     font-size: 1.68rem;
     color: rgba(254,254,254,.85);
@@ -91,7 +92,7 @@ nav ul li{
     position: relative;
 }
 
-nav ul li::after{
+header nav ul li::after{
     content: '';
     position: absolute;
     left:0;
@@ -102,10 +103,10 @@ nav ul li::after{
     transition: all 450ms cubic-bezier(.5,0.05,1,.5);
 
 }
-nav ul li:hover a{
+header nav ul li:hover a{
     color:white;
 }
-nav ul li:hover::after{
+header nav ul li:hover::after{
     width: 100%;
 }
 .profile_about{
@@ -1063,6 +1064,10 @@ footer p{
         margin-left: .5rem;
         transform: rotate(90deg);
     }
+    .popping{
+        display:block;
+        visibility:visible;
+    }
     .spa{
         margin-bottom: 2rem;
     }
@@ -1130,6 +1135,10 @@ footer p{
     .bussiness p{
         text-align: center;
     }
+    .popping{
+        display:block;
+        visibility:visible;
+    }
     .card{
         justify-content: center;
         width:80%;
@@ -1153,4 +1162,104 @@ footer p{
         
     }
  
+}
+
+
+
+
+.popping{
+    transition: all 300ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    position:fixed;
+    top:20%;
+    right:20%;
+    z-index:400;
+}
+.closenav{
+    position: absolute;
+    top:5%;
+    right:10%;
+}
+.closenav i{
+    font-size: 3rem;
+    color:white;
+}
+.popping i{
+    transition: all 300ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    font-size: 3rem;
+    color:#ff4c68;
+}
+.disappear{
+    left:0!important;
+    top:0!important;
+    
+}
+.pop{
+    transition: all 300ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    position: fixed;
+    top:-2000px;
+    left:-2000px;
+    height:100vh;
+    width:100%;
+    background:#8254EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 1000;
+}
+.popping{
+    display:none;
+    visibility:hidden;
+}
+.pop ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    background:#293649;
+}
+.dis{
+    left:-2000px !important;
+    top:-2000px !important;
+}
+.pop ul li{
+    text-decoration: none;
+    text-align: center;
+    padding:4rem 8rem;
+    color:white;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+position: relative;
+transition: all 100ms cubic-bezier(0.64,0.57,0.67,1.53);
+cursor: pointer;
+}
+.pop ul li a{
+    color:white;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+.pop ul li:hover a{
+    transform:translateX(-2rem)
+}
+.pop ul li:hover{
+    background:#212e41;
+   
+}
+.pop ul li::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:1px;
+    background: rgba(255, 255, 255,.8);
+    transition: all 100ms cubic-bezier(0.64,0.57,0.67,1.53);
+}
+
+.pop ul li:hover::after{
+    width:100%;
 }

@@ -21,3 +21,22 @@ const CurrentYear=year.getFullYear();
 
 const spanElement=document.getElementById("year");
 spanElement.innerHTML=CurrentYear;
+
+document.querySelector(".menu").addEventListener("click",()=>{
+    if(document.querySelector(".pop").classList.contains("dis")){
+        document.querySelector(".pop").classList.remove("dis")
+        document.querySelector(".pop").classList.add("disappear");
+    }
+    document.querySelector(".pop").classList.add("disappear");
+})
+
+document.querySelector(".topo").addEventListener("click",()=>{
+    document.querySelector(".pop").classList.add("dis");
+})
+
+const li=document.querySelectorAll(".pop ul li");
+li.forEach(function(item){
+    item.addEventListener("click",()=>{
+        document.querySelector(".pop").classList.add("dis");
+    })
+})
