@@ -1065,8 +1065,8 @@ footer p{
         transform: rotate(90deg);
     }
     .popping{
-        display:block;
-        visibility:visible;
+        display:block !important;
+        visibility:visible !important;
     }
     .spa{
         margin-bottom: 2rem;
@@ -1136,8 +1136,8 @@ footer p{
         text-align: center;
     }
     .popping{
-        display:block;
-        visibility:visible;
+        display:block !important;
+        visibility:visible !important;
     }
     .card{
         justify-content: center;
