@@ -80,17 +80,17 @@
                 <h5 class="dev">Charan</h5>
             </div>
             <ul>
-                <li class="nav_item"><a href="#">Home</a></li>
-                <li class="nav_item"><a href="#">About</a></li>
-                <li class="nav_item"><a href="#">Profile</a></li>
+                <li class="nav_item"><a href="#skill" class="scroll">SKILLS</a></li>
+                <li class="nav_item"><a href="#work" class="scroll">WORKS</a></li>
+                <li class="nav_item"><a href="#contact" class="scroll">CONTACT</a></li>
             </ul>
         </nav>
         <div class="profile_about">
             <p class="ac">Web Developer!</p>
             <p class="web">I build websites for <span>Startup</span></p>
             <div class="button">
-                <button class="close"><a href="#">About</a></button>
-                <button class="closes"><a href="#">Skills</a></button>
+                <button class="close"><a href="#"><i class="fas fa-download"></i>CV</a></button>
+                <button class="closes"><a href="#profile" class="scroll"><i class="fas fa-user"></i>PROFILE</a></button>
             </div>
         </div>
         <div id="vid">
@@ -392,7 +392,7 @@
                <h1>Let's talk bussiness</h1>
                <p>Do you need good looking modern responsive design for your <span>product</span>?</p>
                <div class="buss-button">
-                <button class="bus"><a href="#contact">Contact <i class="fas fa-arrow-down"></i></a></button>
+                <button class="bus"><a href="#contact" class="scroll">Contact <i class="fas fa-arrow-down"></i></a></button>
                </div>
                
            </div>
@@ -448,6 +448,32 @@
   </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".scroll").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 	<script src="index.js" ></script>  
 </body>
