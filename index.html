@@ -15,10 +15,16 @@
     <title>Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;700;800&family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;600;700;800&family=Pangolin&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <meta name="Description" content="Portfolio .Profile,projects and contacts">
+<meta name="Keywords" content=".Profile,projects , contacts">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 </head>
 <body>
     <div class="header">
@@ -29,7 +35,7 @@
       </div>
 
     <div class="dev-name">
-        <h1>CHARAN</h1>
+        <h1 data-aos="fade-down">CHARAN</h1>
     </div>
     <div class="popping">
        <i class="fas fa-bars menu"></i>
@@ -51,17 +57,17 @@
         <div class="popup_content">
             <a href="#popup" class="li">&times;</a>
             
-            <div class="dev-web_skills">
+            <div class="dev-web_skills" data-aos="flip-up">
                 <ul>
                     <div class="skill-show">
-                    <li><i class="fas fa-greater-than"></i>HTML5</li>
-                    <li><i class="fas fa-greater-than"></i>CSS3</li>
-                    <li><i class="fas fa-greater-than"></i>JAVASCRIPT</li>
-                    <li><i class="fas fa-greater-than"></i>JQUERY</li>
-                    <li><i class="fas fa-greater-than"></i>REACT[BASICS]</li>
-                    <li><i class="fas fa-greater-than"></i>NODEJS[INTERMEDIATE]</li>
-                    <li><i class="fas fa-greater-than"></i>MONGODB</li>
-                    <li><i class="fas fa-greater-than"></i>PYTHON</li>
+                    <li data-aos="fade-left"><i class="fas fa-greater-than"></i>HTML5</li>
+                    <li data-aos="fade-right"><i class="fas fa-greater-than"></i>CSS3</li>
+                    <li data-aos="fade-left"><i class="fas fa-greater-than"></i>JAVASCRIPT</li>
+                    <li data-aos="fade-right"><i class="fas fa-greater-than"></i>JQUERY</li>
+                    <li data-aos="fade-left"><i class="fas fa-greater-than"></i>REACT[BASICS]</li>
+                    <li data-aos="fade-right"><i class="fas fa-greater-than"></i>NODEJS[INTERMEDIATE]</li>
+                    <li data-aos="fade-left"><i class="fas fa-greater-than"></i>MONGODB</li>
+                    <li data-aos="fade-right"><i class="fas fa-greater-than"></i>PYTHON</li>
                 </ul>
             </div>
 
@@ -77,19 +83,19 @@
     <header>
         <nav>
             <div class="name">
-                <h5 class="dev">Charan</h5>
+                <h5 class="dev" data-aos="fade-down">Charan</h5>
             </div>
-            <ul>
+            <ul data-aos="fade-down">
                 <li class="nav_item"><a href="#skill" class="scroll">SKILLS</a></li>
                 <li class="nav_item"><a href="#work" class="scroll">WORKS</a></li>
                 <li class="nav_item"><a href="#contact" class="scroll">CONTACT</a></li>
             </ul>
         </nav>
-        <div class="profile_about">
+        <div class="profile_about" data-aos="z">
             <p class="ac">Web Developer!</p>
             <p class="web">I build websites for <span>Startup</span></p>
             <div class="button">
-                <button class="close"><a href="images/CV_2020-06-29-094517.pdf"><i class="fas fa-download"></i>CV</a></button>
+                <button class="close"><a href="images/CV_2020-06-30-110111.pdf" download><i class="fas fa-download"></i>CV</a></button>
                 <button class="closes"><a href="#profile" class="scroll"><i class="fas fa-user"></i>PROFILE</a></button>
             </div>
         </div>
@@ -103,7 +109,7 @@
 
     <section class="skills" id="skill">
         <div class="skills-heading">
-            <h1>Skills</h1>
+            <h1 data-aos="example-anim3">Skills</h1>
         </div>
         <div class="rows">
             <div class="col1">
@@ -136,13 +142,13 @@
     </section>
     <main class="about" id="profile">
         <div class="about-heading">
-            <h1 class="abouts">ABOUT</h1>
+            <h1 class="abouts" data-aos="left">PROFILE</h1>
         </div>
         <div class="card a">
             <div class="card-container" data-aos="zoom-in-up">
                 <div class="upper-container">
                     <div class="image-container">
-                        <img src="./images/four.jpg" />
+                        <img src="./images/four-min.jpg" />
                      </div>
                 </div>
                
@@ -167,10 +173,10 @@
         </div>
         <section class="process">
             <div class="about-heading pro">
-                <h1 class="abouts">My Process</h1>
+                <h1 class="abouts" data-aos="b">My Process</h1>
             </div>
             <div class="rows3">
-                <div class="column1 a"  data-aos="fade-down">
+                <div class="column1 a"  data-aos="right">
                     <div class="gradient">
                         <i class="fas fa-lightbulb"></i>
                         <h1>Inspire</h1>
@@ -182,7 +188,7 @@
 
                 </div>
 
-                <div class="column1 a"  data-aos="fade-right">
+                <div class="column1 a"  data-aos="up">
                                         <div class="gradient b">
                         <i class="fas fa-pencil-ruler"></i>
                         <h1>Design</h1>
@@ -195,7 +201,7 @@
                 </div>
 
 
-                <div class="column1 a"  data-aos="fade-up">
+                <div class="column1 a"  data-aos="lefts">
                     <div class="gradient o">
                         <i class="fas fa-laptop-code"></i>
                         <h1>Code</h1>
@@ -213,7 +219,7 @@
 
     <main class="works" id="work">
         <div class="skills-heading marb">
-            <h1>WORKS</h1>
+            <h1 data-aos="r">WORKS</h1>
         </div>
 
         <div class="works-about">
@@ -246,7 +252,7 @@
             </div>
            
             <div class="works-img sp" style="margin-top: 5rem;" data-aos="zoom-in-down">
-               <a href="https://appxback-end.herokuapp.com/"> <img src="./images/Screenshot (86).png" height="300px"></a>
+               <a href="https://appxback-end.herokuapp.com/"> <img src="./images/Screenshot (86)-min.png" height="300px"></a>
 			</div>
 			
 			
@@ -257,7 +263,7 @@
         <div class="works-about">
 
             <div class="works-img sp spa" style="margin-top: 5rem;" data-aos="zoom-in-up">
-                <a href="https://charanpy-bootstrap.netlify.app"> <img src="./images/Screenshot (88).png" height="300px"></a>
+                <a href="https://charanpy-bootstrap.netlify.app"> <img src="./images/Screenshot (88)-min.png" height="300px"></a>
              </div>
             
 			<div class="works-para mtp" style="display:flex; align-items: center;" data-aos="fade-up">
@@ -277,7 +283,7 @@
             </div>
            
             <div class="works-img" style="margin-top: 5rem;" data-aos="zoom-in-up">
-               <a href="#"> <img src="./images/Screenshot (91).png" height="300px"></a>
+               <a href="#"> <img src="./images/Screenshot (91)-min.png" height="300px"></a>
 			</div>
 			
 			
@@ -287,7 +293,7 @@
 <section id="slide">
 
     <div class="about-heading pro mb">
-        <h1 class="abouts">Other Works</h1>
+        <h1 class="abouts" data-aos="o">Other Works</h1>
     </div>
 
         <div class="slider" data-aos="fade-right">
@@ -388,7 +394,7 @@
                 <a href="#slide-5">5</a>
             </div>
            </div>
-           <div class="bussiness">
+           <div class="bussiness" data-aos="z">
                <h1>Let's talk bussiness</h1>
                <p>Do you need good looking modern responsive design for your <span>product</span>?</p>
                <div class="buss-button">
@@ -411,11 +417,16 @@
 
 		</div>
 		<div class="social icons">
-			<a href="#" class="fab fa-facebook"></a>
-			<a href="#" class="fab fa-twitter"></a>
-			<a href="#" class="fab fa-instagram"></a>
-		</div>
+			<a href="http://eepurl.com/g82bLH" class="fas fa-envelope" target="_blank"></a>
+			
+            <a href="https://www.instagram.com/charan030702/" class="fab fa-instagram" target="_blank"></a>
+            
+        </div>
+        <div class="gmail">
+            <p><i class="fas fa-envelope"></i>durgicharan81@gmail.com</p>
+        </div>
     </footer>
+
     <div class="preloader">
         <div class="loader"></div>
         <h1>Loading</h1>
@@ -445,10 +456,11 @@
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
   </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $(".scroll").on('click', function(event) {

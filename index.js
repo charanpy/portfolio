@@ -1,10 +1,3 @@
-var tl = gsap.timeline();
-tl.from("header",{duration:1,height:"0vh !important",width:"0% !important"})
-.from("#vid",{duration:1,height:"0vh !important",width:"0% !important"})
-.from("nav",{duration:1,transform:"translateY(-1000px)"})
-.from(".ac",{duration:1,transform:"translateX(-1000px)"})
-.from(".web",{duration:1,transform:"translateX(1000px)"})
-.from(".button",{duration:1,transform:"translateY(1000px)"})
 
 //"#vid",{duration:1,height:"0vh",width:"0%",backfaceVisibility: "hidden" ,backgroundPosition:"topCenter",backgroundSize:"cover",objectFit:"cover"}
 
